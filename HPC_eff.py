@@ -14,19 +14,19 @@ def linear(n):
 
 def quadratic(n):
     if n > 5000:  # Adjusting to avoid impractical execution times
-        print(f"Skipped {func.__name__} for n: {n} due to impracticality.")
+        print(f"Skipped {quadratic.__name__} for n: {n} due to impracticality.")
         return "Skipped due to impracticality"
     return [(i, j) for i in range(n) for j in range(n)]
 
 def cubic(n):
     if n > 5000:  # Adjusting to avoid impractical execution times
-        print(f"Skipped {func.__name__} for n: {n} due to impracticality.")
+        print(f"Skipped {cubic.__name__} for n: {n} due to impracticality.")
         return "Skipped due to impracticality"
     return [(i, j, k) for i in range(n) for j in range(n) for k in range(n)]
 
 def exponential(n):
     if n > 500:  # Adjusting to avoid impractical execution times
-        print(f"Skipped {func.__name__} for n: {n} due to impracticality.")
+        print(f"Skipped {exponential.__name__} for n: {n} due to impracticality.")
         return "Skipped due to impracticality"
     return 2 ** n
 
@@ -35,12 +35,12 @@ def logarithmic(n):
 
 def factorial(n):
     if n > 500:  # Adjusting to avoid impractical execution times
-        print(f"Skipped {func.__name__} for n: {n} due to impracticality.")
+        print(f"Skipped {factorial.__name__} for n: {n} due to impracticality.")
         return "Skipped due to impracticality"
     return math.factorial(n)
 
 # List of n values to test
-n_values = [10, 100, 500, 1000, 5000, 10000, 100000]
+n_values = [10, 100, 1000]
 
 # Function list
 functions = [linear, quadratic, cubic, exponential, logarithmic, factorial]
