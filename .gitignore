@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C / C++ binaries
+*.o
+*.out
+*.a
+*.so
+test_mpi
+
+# Log files
+*.log
+*.err
+collatz_pairs_*.csv
+timings.txt
+
+# Temporary files
+*~
